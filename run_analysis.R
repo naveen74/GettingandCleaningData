@@ -26,6 +26,7 @@ xytrain<- cbind(xtrain, ytrain)
 df<- rbind(xytest,xytrain)
 
 #2.Extracts only the measurements on the mean and standard deviation for each measurement
+#########################################################################################
 rexp_pattern<- "(mean\\(\\)|std\\(\\))"
 subset_match<- grepl(rexp_pattern, features[,2])
 df_subset<- df[ ,subset_match]
