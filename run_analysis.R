@@ -1,5 +1,5 @@
 #1.Merges the training and the test sets to create one data set.
-
+###############################################################
 features<- read.table("features.txt")
 
 xtest<- read.table("./test/X_test.txt", header=FALSE)
